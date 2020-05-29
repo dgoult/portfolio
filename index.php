@@ -1,3 +1,5 @@
+<?php include('menu.php'); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,6 +8,10 @@
   <title>Portfolio</title>
 </head>
 <body>
+
+
+
   <h1>Ceci est mon portfolio</h1>
+
 </body>
 </html>

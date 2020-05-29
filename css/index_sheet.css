@@ -1,0 +1,48 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color : #ffffff no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size:cover;
+  font-family: 'Rubik', sans-serif; /*'Source code pro', Calibri, serif;*/
+}
+body {
+  margin: 0px;
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+}
+
+/*Boite CSS*/
+div.box {
+  width: 51%;   /*longueur du cadre*/
+  height: 25%;   /*hauteur du cadre */
+  /*border: 1px solid #333;*/
+  /*box-shadow: 8px 8px 5px rgb(171, 13, 182);*/
+  margin-top: 5%;
+  padding-bottom: 20px;
+  /*background-color: #e3e5ee;*/
+  margin-left: auto;  /*centrer*/
+  margin-right: auto; /*centrer*/
+  text-align: center;
+ 
+}
+div.box>h1 {
+  font-family: 'Quicksand', sans-serif;
+}
+div.box>h2 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+div.centrer {
+  text-align: left;
+  /*border: 1px solid #333;*/
+  width: 35%;   /*longueur du cadre*/
+  margin-top: 50px;
+  margin-left: 10%;
+  
+}
+div.centrer>p {
+  font-family: 'Quicksand', sans-serif;
+}

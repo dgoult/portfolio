@@ -1,0 +1,131 @@
+/*CSS MENU NAV*/
+
+nav{
+  width: 100%;
+  /*background-color: #424558;*/
+  }
+  
+  nav ul {
+  
+  top: 0;
+  margin-top: 0px;
+  margin-left: 50%;
+  padding: 0;
+  
+  }
+  nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+  }
+  
+  nav > ul > li {
+  float: left;
+  position: relative;
+  }
+  
+  nav > ul > li > a{
+  padding: 20px 30px;
+  color: #7f7f7f;
+  }
+  nav > ul > li > a.index{
+  padding: 20px 30px;
+  color: #424558;
+  }
+  
+  nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px;
+  }
+  
+  
+  nav li {
+  list-style-type: none;
+  }
+  
+  .submenu{
+  display: none;
+  
+  }
+  
+  /*ul.submenu li:hover a{
+  
+  border-top: 5px solid #d32727 ;
+  background-color: #9918183b;
+  font-weight: bold;
+  }*/
+  
+  nav a{
+  display: inline-block;
+  text-decoration: none;
+  }
+  nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+  }
+  
+  ul.submenu li{
+  
+  border-top: 5px solid #C51FD9 ;
+  background-color: rgb(161, 15, 177);
+  
+  }
+  
+  .submenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: rgb(0, 255, 34);
+  width: 270px;
+  }
+  
+  .Accueil:hover{
+  border-top: 5px solid #1417cf ;
+  background-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu-matieres:hover{
+    border-top: 5px solid #C51FD9 ;
+    background-color: rgba(198, 31, 217, 0.405);
+  }
+  
+  .menu-phpmyadmin:hover{
+  border-top: 5px solid #09d5f0 ;
+  background-color: rgba(38, 228, 218, 0.15);
+  }
+  
+
+  .menu-add:hover{
+  border-top: 5px solid #26e430 ;
+  background-color: rgba(54, 228, 38, 0.15);
+  }
+  
+  .menu-login:hover{
+    border-top: 5px solid #e4d126 ;
+    background-color: #e4d1262c;
+    }
+  
+  .menu-logout:hover{
+  border-top: 5px solid #e426cb ;
+  background-color: rgba(212, 38, 228, 0.15);
+  }
+  
+  
+  
+  li.menu-register:hover{
+    border-top: 5px solid #2629e4 ;
+    background-color: rgba(38, 57, 228, 0.15);
+    }
+  
+  
+  
+  .submenu li:hover a {
+  color: rgb(0, 255, 34);
+  font-weight: bold;
+  }
+  
+  
+  
+  /*CSS MENU NAV FIN */
