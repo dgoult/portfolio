@@ -1,39 +1,45 @@
-<link rel="stylesheet" href="css/index_sheet.css">
-<link rel="stylesheet" href="css/menu.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 <!-- Menu de navigation -->
 
 <?php session_start(); ?>
 
-<nav>
-          <ul>
-           
-                <li class="Accueil"><a class="index" href="index.php" >Accueil</a></li>
-                <li class="menu-matieres"><a href=>Matières</a>
-                <ul class="submenu">
-                        <li><a href="/projets/SI6">SI6</a></li>
-                        <li><a href="/projets/SLAM2">SLAM 2</a></li>
-                        <li><a href="/projets/m2l_proj">M2L</a></li>
-                        <li><a href="/projets/Divers">Divers</a></li>
-                        
-                </ul>
-            </li>
-            <li class='menu-phpmyadmin'><a href='../../phpmyadmin'>PhpMyAdmin</a></li>
-            
-            <?php
-              if (!isset($_SESSION['pseudo'])){
-              echo "<li class='menu-register'><a href='register.php'>Inscription</a></li>";
-              echo "<li class='menu-login'><a href='login.php'>Connexion</a></li>";}
-              else {echo "<li class='menu-logout'><a href='logout.php'>".$_SESSION['pseudo']." : Déconnexion</a></li>";}
-              ?>
-              
-              
-          </ul>
-      </nav>
-      
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  
 
 <!-- Menu de navigation FIN -->
